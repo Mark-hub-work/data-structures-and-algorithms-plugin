@@ -15,8 +15,10 @@ export class Rectangle {
     this.element.style.color = "white"
     this.element.style.background = "blue"
     this.element.style.bottom = "0"
-    this.element.position = "absolute"
-    this.element.style.margin= "0.5em"
+    this.element.style.margin = "0.5em"
+    this.element.style.display = "flex"
+    this.element.style.alignItems = "center"
+    this.element.style.justifyContent = "center"
   }
 
   static set tallest(newTallest) {

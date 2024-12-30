@@ -2,7 +2,7 @@ import { Rectangle } from './Rectangle.js'
 
 document.getElementById("custom-data").addEventListener("click", addCustomDataInputFields)
 document.getElementById("random-data").addEventListener("click", addRandomDataInputFields)
-
+document.getElementById("start-sorting-btn").addEventListener("click", runSortingAlgorithm)
 
 function addCustomDataInputFields() {
 
@@ -80,14 +80,22 @@ function visualizeData() {
       customDataArray.forEach(number => {
         generateRectangle(number)
       })
+    } else {
+      document.getElementById('sorting-visualization-area').innerHTML = 'You must input valid data.';
     }
   }
   
-
   // random data
   if(document.getElementById("random-data-input") !== null) {
     let numOfRandData = document.getElementById('random-data-input').value
-    console.log(numOfRandData)
+    let randomDataArray = []
+    for(let i=0;i < numOfRandData;i++) {
+      randomDataArray.push(Math.floor((Math.random() * 30) + 1))
+    }
+    clearRectangles()
+      randomDataArray.forEach(number => {
+        generateRectangle(number)
+      })
   }
 
   return
@@ -111,4 +119,18 @@ function generateRectangle(number) {
 
 function clearRectangles() {
   document.getElementById('sorting-visualization-area').innerHTML = '';
+}
+
+function runSortingAlgorithm(event) {
+  event.preventDefault()
+  sortingType = document.getElementById('sorting-type-selector').value
+  
+  switch(sortingType) {
+    case 'Bubble Sort':
+      break;
+    case 'Selection Sort':
+      break;
+    case 'Insertion Sort':
+      break;
+  }
 }
