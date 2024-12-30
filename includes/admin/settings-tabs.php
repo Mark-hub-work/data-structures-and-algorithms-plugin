@@ -18,7 +18,7 @@ framework\register_plugin_settings($plugin, [
       'title' => 'Sorting',
       'callback' => function() use($plugin) {
         $args = [];
-        $html = $plugin->get_template('template', $args, ['plugin_tmp_path' => 'includes/templates'], true);
+        $html = $plugin->get_template('sorting-template', $args, ['plugin_tmp_path' => 'includes/templates'], true);
 
         echo $html;
       }

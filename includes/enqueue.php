@@ -1,24 +1,32 @@
 <?php
 
 // Enqueue frontend styles and scripts
-
-add_action('wp_enqueue_scripts', function() use ($plugin) {
+add_action('admin_enqueue_scripts', function() use ($plugin) {
 
   $url = $plugin->url;
   $version = $plugin->version;
 
   wp_enqueue_style(
-    'data-structures-and-algorithms-plugin',
-    $url . 'assets/build/data-structures-and-algorithms-plugin.min.css',
+    'sorting-styles',
+    $url . 'assets/build/sorting.min.css',
     [],
     $version
   );
 
+  // Enqueue frontend script
   wp_enqueue_script(
-    'data-structures-and-algorithms-plugin',
-    $url . 'assets/build/data-structures-and-algorithms-plugin.min.js',
-    ['jquery'],
-    $version
+    'sorting-script',
+    $url . 'assets/build/sorting.min.js',
+    [],
+    $version,
+    true
   );
+
+  // wp_enqueue_script(
+  //   'sorting',
+  //   $url . 'assets/build/sorting.min.js',
+  //   ['jquery'],
+  //   $version
+  // );
 
 });

@@ -3,13 +3,13 @@
  * Plugin Name: Data Structures and Algorithms Plugin
  * Plugin URI: https://tangibleplugins.com/data-structures-and-algorithms-plugin
  * Description: Plugin for exploring data structures and algorithms
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: Team Tangible
  * Author URI: https://teamtangible.com
  * License: GPLv2 or later
  */
 
-define( 'DATA_STRUCTURES_AND_ALGORITHMS_PLUGIN_VERSION', '0.0.1' );
+define( 'DATA_STRUCTURES_AND_ALGORITHMS_PLUGIN_VERSION', '0.0.2' );
 
 require __DIR__ . '/vendor/tangible/framework/index.php';
 require __DIR__ . '/vendor/tangible/plugin-updater/index.php';

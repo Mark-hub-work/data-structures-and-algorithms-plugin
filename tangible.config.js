@@ -18,6 +18,16 @@ export default {
       src: 'assets/src/admin.scss',
       dest: 'assets/build/admin.min.css'
     },
+
+    {
+      src: 'assets/src/css/sorting.scss',
+      dest: 'assets/build/sorting.min.css'
+    },
+
+    {
+      src: 'assets/src/js/sorting.js',
+      dest: 'assets/build/sorting.min.js'
+    }
   ],
   format: [
     'assets/src',
