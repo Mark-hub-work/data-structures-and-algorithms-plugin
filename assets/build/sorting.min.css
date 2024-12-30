@@ -1,4 +1,12 @@
 #sort-settings-wrapper > div {
   margin-bottom: 1.5em; /* Add margin-bottom to create vertical space */
 }
+
+#sorting-visualization-area {
+  position: relative;
+  height: 30em; /* Set a fixed height or as needed */
+  display: flex;
+  align-items: flex-end; /* Aligns children at the bottom */
+  justify-content: center; /* Distributes space between children */
+}
 /*# sourceMappingURL=sorting.min.css.map */

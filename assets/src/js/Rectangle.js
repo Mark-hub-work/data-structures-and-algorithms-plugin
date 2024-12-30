@@ -12,7 +12,11 @@ export class Rectangle {
     this.element.innerText = height
     this.element.style.height = height + "em"
     this.element.style.width = width + "em"
-    this.element.style.color = "blue"
+    this.element.style.color = "white"
+    this.element.style.background = "blue"
+    this.element.style.bottom = "0"
+    this.element.position = "absolute"
+    this.element.style.margin= "0.5em"
   }
 
   static set tallest(newTallest) {
