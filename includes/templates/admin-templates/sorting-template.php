@@ -2,6 +2,8 @@
 
 <div id="sort-settings-wrapper">
 
+  <div id="sorting-visualization-area"></div>
+
   <div id="sort-number-list-wrapper">
     <p id="sort-number-list"><p>
   </div>

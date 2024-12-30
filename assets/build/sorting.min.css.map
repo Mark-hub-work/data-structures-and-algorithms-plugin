@@ -1,1 +1,1 @@
-{"version":3,"sources":["../src/css/sorting.scss"],"names":[],"mappings":"AAAA;EACE,oBAAA,EAAA,+CAAA;AACF","file":"sorting.min.css","sourcesContent":["#sort-settings-wrapper > div {\n  margin-bottom: 1.5em; /* Add margin-bottom to create vertical space */\n}\n"]}
+{"version":3,"sources":["../src/css/sorting.scss"],"names":[],"mappings":"AAAA;EACE,oBAAA,EAAA,+CAAA;AACF","file":"sorting.min.css","sourcesContent":["#sort-settings-wrapper > div {\r\n  margin-bottom: 1.5em; /* Add margin-bottom to create vertical space */\r\n}\r\n"]}

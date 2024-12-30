@@ -15,7 +15,7 @@ export default {
     // Admin
 
     {
-      src: 'assets/src/admin.scss',
+      src: 'assets/src/css/admin.scss',
       dest: 'assets/build/admin.min.css'
     },
 
