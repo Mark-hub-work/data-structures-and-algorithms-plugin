@@ -123,14 +123,43 @@ function clearRectangles() {
 
 function runSortingAlgorithm(event) {
   event.preventDefault()
-  sortingType = document.getElementById('sorting-type-selector').value
+  let sortingType = document.getElementById('sorting-type-selector').value
   
   switch(sortingType) {
     case 'Bubble Sort':
+      BubbleSort()
       break;
     case 'Selection Sort':
+      SelectionSort()
       break;
     case 'Insertion Sort':
+      InsertionSort()
       break;
   }
+}
+
+function BubbleSort() {
+  // get the list of nodes
+  let sortingArea = document.getElementById('sorting-visualization-area')
+  let data = document.getElementById('sorting-visualization-area').childNodes
+  let dataLength = data.length
+  // Loop through the list n-1 times
+  for(let i=0; i<dataLength - 1;i++) {
+    // Loop through n-1 times - # iterations already passed elements in the list because the elements at the end are already sorted
+    for(let j=0; j<dataLength - (i+1); j++) {
+      if(parseInt(data[j].innerText) > parseInt(data[j+1].innerText)) {
+        sortingArea.insertBefore(data[j+1], data[j])
+      }
+    }
+  }
+
+  return
+}
+
+function SelectionSort() {
+  return
+}
+
+function InsertionSort() {
+  return
 }

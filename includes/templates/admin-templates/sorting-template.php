@@ -9,7 +9,7 @@
   </div>
 
   <div id="sort-selection-settings">
-    <select name="sorting-type" class="sorting-type-selector">
+    <select name="sorting-type" id="sorting-type-selector">
       <option value="Bubble Sort">Bubble Sort</option>
       <option value="Selection Sort">Selection Sort</option>
       <option value="Insertion Sort">Insertion Sort</option>
